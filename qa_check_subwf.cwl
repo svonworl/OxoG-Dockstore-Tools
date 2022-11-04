@@ -25,7 +25,7 @@ outputs:
 
 inputs:
     tumour_record:
-        type: int
+        type: "TumourType.yaml#TumourType2"
     vcfs:
         type: File[]
     normal_bam:
