@@ -29,7 +29,7 @@ inputs:
     inputFileDirectory:
         type: Directory
     in_data:
-        type: "TumourType.yaml#TumourType"
+        type: "TumourType.yaml#TumourType1"
     refDataDir:
         type: Directory
 

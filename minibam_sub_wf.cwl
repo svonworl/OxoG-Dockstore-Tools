@@ -26,7 +26,7 @@ inputs:
     inputFileDirectory:
         type: Directory
     in_data:
-        type: "TumourType.yaml#TumourType"
+        type: "TumourType.yaml#TumourType3"
     indel-padding:
         type: string
     snv-padding:
