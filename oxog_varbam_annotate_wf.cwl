@@ -54,7 +54,7 @@ inputs:
     tumours:
       type:
         type: array
-        items: "TumourType.yaml#TumourType5"
+        items: int
 
 outputs:
     oxog_filtered_files:
@@ -105,7 +105,7 @@ steps:
         run:
             class: ExpressionTool
             inputs:
-                in_record: "PreprocessedFilesType.yaml#PreprocessedFileset1"
+                in_record: int
             outputs:
                 merged_vcfs: File[]
             expression: |
@@ -118,7 +118,7 @@ steps:
         run:
             class: ExpressionTool
             inputs:
-                in_record: "PreprocessedFilesType.yaml#PreprocessedFileset2"
+                in_record: int
             outputs:
                 cleaned_vcfs: File[]
             expression: |
@@ -131,7 +131,7 @@ steps:
         run:
             class: ExpressionTool
             inputs:
-                in_record: "PreprocessedFilesType.yaml#PreprocessedFileset3"
+                in_record: int
             outputs:
                 normalized_vcfs: File[]
             expression: |
@@ -144,7 +144,7 @@ steps:
         run:
             class: ExpressionTool
             inputs:
-                in_record: "PreprocessedFilesType.yaml#PreprocessedFileset4"
+                in_record: int
             outputs:
                 extracted_snvs: File[]?
             expression: |
@@ -393,7 +393,7 @@ steps:
                 inputFileDirectory:
                     type: Directory
                 tumour_record:
-                    type: "TumourType.yaml#TumourType6"
+                    type: int
                 vcfs:
                     type: File[]
                 normal_bam:
