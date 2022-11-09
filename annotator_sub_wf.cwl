@@ -20,7 +20,7 @@ requirements:
 
 inputs:
     tumour_record:
-        type: int
+        type: "TumourType.yaml#TumourType4"
     tumourMinibams:
         type: File[]
     VCFs:
