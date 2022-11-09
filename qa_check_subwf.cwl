@@ -25,7 +25,7 @@ outputs:
 
 inputs:
     tumour_record:
-        type: int
+        type: "mooo"
     vcfs:
         type: File[]
     normal_bam:
