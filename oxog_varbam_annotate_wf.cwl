@@ -54,7 +54,7 @@ inputs:
     tumours:
       type:
         type: array
-        items: "TumourType.yaml#TumourType5"
+        items: int
 
 outputs:
     oxog_filtered_files:
