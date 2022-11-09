@@ -45,7 +45,7 @@ inputs:
 # - The SNVs that were extracted from INDELs (if there were any - usually there are none).
 outputs:
     preprocessedFiles:
-        type: "PreprocessedFilesType.yaml#PreprocessedFileset6"
+        type: "PreprocessedFilesType.yaml#PreprocessedFileset"
         outputSource: populate_output_record/output_record
 
 steps:
@@ -418,7 +418,7 @@ steps:
                 normalizedVcfs: File[]
                 cleanedVcfs: File[]
             outputs:
-              output_record: "PreprocessedFilesType.yaml#PreprocessedFileset7"
+              output_record: "PreprocessedFilesType.yaml#PreprocessedFileset"
             expression: |
                     $(
                         {output_record: {
